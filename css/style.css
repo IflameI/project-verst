@@ -209,8 +209,8 @@ body.lock {
 	left: 0;
 	top: 0;
 	background: transparent;
-	-webkit-box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
-	        box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
 }
 @media (max-width: 991.98px) {
 	.header {
@@ -410,8 +410,8 @@ body.lock {
 .menu__column {
 	background: #fff;
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 50%;
-	        flex: 0 1 50%;
+	    -ms-flex: 0 1 55%;
+	        flex: 0 1 55%;
 	padding: 100px 100px 100px 0px;
 }
 @media (max-width: 1344px) {
@@ -430,7 +430,10 @@ body.lock {
 	}
 }
 .menu__column--mob {
-	padding-left: 300px;
+	padding-left: 420px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 45%;
+	        flex: 0 1 45%;
 }
 @media (max-width: 991.98px) {
 	.menu__column--mob {
@@ -453,6 +456,14 @@ body.lock {
 	        flex: 0 1 25%;
 	position: relative;
 	padding-left: 20px;
+}
+.menu__column--min:first-child {
+	margin-right: 50px;
+}
+@media (max-width: 991.98px) {
+	.menu__column--min:first-child {
+		margin-right: 0;
+	}
 }
 @media (max-width: 991.98px) {
 	.menu__column--min:not(:first-child) {
@@ -509,7 +520,7 @@ body.lock {
 .menu__second-level li {
 	margin: 0px !important;
 	background: #fff;
-	padding: 10px 0 10px 10px;
+	padding: 10px 0 20px 10px;
 }
 .menu__second-level li a {
 	color: #3e5660;
@@ -533,8 +544,7 @@ body.lock {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	font-size: 15px;
 }
 @media (max-width: 991.98px) {
 	.menu__second-level--list {
@@ -569,7 +579,7 @@ body.lock {
 }
 .menu__text {
 	font-family: Poppins;
-	font-size: 16px;
+	font-size: 15px;
 	color: #3e5660;
 	font-weight: 500;
 	max-width: 390px;
@@ -1773,8 +1783,30 @@ body.lock {
 .productPage--green {
 	background: #3fb76c;
 }
+.productPage--green .productPage__button button {
+	background: #234c97;
+}
+@media (min-width: 991.98px) {
+	.productPage--green .productPage__button button:hover {
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		background: #2bb7c4;
+	}
+}
 .productPage--red {
 	background: #ed3e53;
+}
+.productPage--red .productPage__button button {
+	background: #234c97;
+}
+@media (min-width: 991.98px) {
+	.productPage--red .productPage__button button:hover {
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		background: #2bb7c4;
+	}
 }
 @media (max-width: 1600px) {
 	.productPage {
