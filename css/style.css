@@ -589,9 +589,6 @@ body.lock {
 	margin-right: 0;
 	padding-top: 15px;
 }
-.menu__mobile-func .header__button button {
-	background: #234c97;
-}
 @media (max-width: 991.98px) {
 	.menu__mobile-func .header__button button {
 		width: 100%;
