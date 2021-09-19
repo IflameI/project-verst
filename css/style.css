@@ -209,11 +209,11 @@ body.lock {
 	left: 0;
 	top: 0;
 	background: transparent;
+	-webkit-box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
+	        box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
 }
 @media (max-width: 991.98px) {
 	.header {
-		-webkit-box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
-		        box-shadow: 1px 12px 10px 0px rgba(0, 0, 0, 0.16);
 		top: -2px;
 	}
 }
