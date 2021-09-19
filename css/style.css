@@ -209,12 +209,22 @@ body.lock {
 	left: 0;
 	top: 0;
 	background: transparent;
+	position: relative;
+}
+.header:after {
+	content: "";
+	width: 100%;
 	-webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
 	        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+	height: 100px;
 }
 @media (max-width: 991.98px) {
-	.header {
-		top: -2px;
+	.header:after {
+		z-index: 1;
 	}
 }
 .header__row {
@@ -241,6 +251,11 @@ body.lock {
 	.header__row {
 		font-size: 22px;
 		padding: 0 10px;
+	}
+}
+@media (max-width: 767.98px) {
+	.header__row {
+		height: 90px;
 	}
 }
 .header__logo {
@@ -361,7 +376,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.menu__body {
 		position: fixed;
-		top: 100px;
+		top: 90px;
 		left: 100%;
 		width: 100%;
 		height: 100%;
@@ -375,6 +390,11 @@ body.lock {
 	}
 	.menu__body.active {
 		left: 0;
+	}
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+	.menu__body {
+		top: 80px;
 	}
 }
 .menu__elem:hover .menu__second-level {
@@ -1815,12 +1835,13 @@ body.lock {
 }
 @media (max-width: 1344px) {
 	.productPage {
-		padding-top: 330px;
+		padding-top: 241px;
 	}
 }
 @media (max-width: 991.98px) {
 	.productPage {
-		padding-top: 200px;
+		padding-top: 80px;
+		padding-bottom: 350px;
 	}
 }
 .productPage__wrapper {
@@ -1836,6 +1857,11 @@ body.lock {
 	.productPage__row {
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
+	}
+}
+@media (max-width: 991.98px) {
+	.productPage__button {
+		padding-left: 25px;
 	}
 }
 .productPage__column {
@@ -1910,6 +1936,12 @@ body.lock {
 		margin-bottom: 20px;
 	}
 }
+@media (max-width: 991.98px) {
+	.productPage__title {
+		padding-left: 25px;
+		padding-right: 15px;
+	}
+}
 @media (max-width: 767.98px) {
 	.productPage__title {
 		font-size: 36px;
@@ -1929,12 +1961,24 @@ body.lock {
 		max-width: 390px;
 	}
 }
+@media (max-width: 991.98px) {
+	.productPage__text {
+		padding-left: 25px;
+		padding-right: 15px;
+	}
+}
 .productPage__list {
 	padding-left: 20px;
 }
 @media (max-width: 991.98px) {
 	.productPage__list {
-		padding-bottom: 100px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 991.98px) {
+	.productPage__list {
+		padding-left: 45px;
+		padding-right: 15px;
 	}
 }
 .productPage__list li {
@@ -2692,7 +2736,13 @@ body.lock {
 }
 @media (max-width: 991.98px) {
 	.main-content {
-		padding-top: 200px;
+		padding-top: 150px;
+	}
+}
+@media (max-width: 767.98px) {
+	.main-content {
+		padding-top: 80px;
+		min-height: 80vh;
 	}
 }
 @media (max-width: 991.98px) {
@@ -2790,7 +2840,7 @@ body.lock {
 }
 @media (max-width: 991.98px) {
 	.main-content__title {
-		padding-left: 7px;
+		padding-left: 25px;
 	}
 }
 @media (max-width: 479.98px) {
@@ -2817,7 +2867,7 @@ body.lock {
 }
 @media (max-width: 991.98px) {
 	.main-content__text {
-		padding-left: 7px;
+		padding-left: 25px;
 	}
 }
 .main-content__decor {
@@ -2905,6 +2955,11 @@ body.lock {
 		font-size: 34px;
 	}
 }
+@media (max-width: 991.98px) {
+	.product__title {
+		padding-left: 25px;
+	}
+}
 .product__text {
 	font-family: Poppins;
 	font-size: 18px;
@@ -2915,7 +2970,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.product__text {
 		text-align: left;
-		padding: 25px 0;
+		padding: 25px 0 25px 25px;
 	}
 }
 @media (max-width: 991.98px) {
@@ -2931,6 +2986,11 @@ body.lock {
 @media (max-width: 991.98px) {
 	.product__img img {
 		height: 400px;
+	}
+}
+@media (max-width: 991.98px) {
+	.product__button {
+		padding-left: 25px;
 	}
 }
 @media (max-width: 991.98px) {
@@ -2970,6 +3030,11 @@ body.lock {
 		text-align: left;
 	}
 }
+@media (max-width: 991.98px) {
+	.health__title {
+		padding-left: 25px;
+	}
+}
 .health__text {
 	text-align: center;
 	font-family: Poppins;
@@ -2982,6 +3047,11 @@ body.lock {
 @media (max-width: 991.98px) {
 	.health__text {
 		text-align: left;
+	}
+}
+@media (max-width: 991.98px) {
+	.health__text {
+		padding-left: 25px;
 	}
 }
 .health__row {
@@ -3109,6 +3179,11 @@ body.lock {
 		margin-bottom: 25px;
 	}
 }
+@media (max-width: 991.98px) {
+	.trust__title {
+		padding-left: 25px;
+	}
+}
 .trust__text {
 	font-family: Poppins;
 	font-size: 18px;
@@ -3121,6 +3196,11 @@ body.lock {
 		max-width: unset;
 		text-align: left;
 		margin-bottom: 20px;
+	}
+}
+@media (max-width: 991.98px) {
+	.trust__text {
+		padding-left: 25px;
 	}
 }
 .trust__decor {
