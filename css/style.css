@@ -2159,6 +2159,11 @@ body.lock {
 	text-align: center;
 	color: #3e5660;
 }
+@media (max-width: 991.98px) {
+	.family__suptext {
+		padding: 0 20px;
+	}
+}
 
 .work {
 	padding: 90px 0;
@@ -2874,12 +2879,12 @@ body.lock {
 @media (max-width: 991.98px) {
 	.main-content__title {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 @media (max-width: 479.98px) {
 	.main-content__title {
 		font-size: 34px;
-		padding-right: 0;
 	}
 }
 .main-content__text {
@@ -2901,6 +2906,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.main-content__text {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .main-content__decor {
@@ -2985,12 +2991,13 @@ body.lock {
 @media (max-width: 991.98px) {
 	.product__title {
 		text-align: left;
-		font-size: 34px;
+		font-size: 30px;
 	}
 }
 @media (max-width: 991.98px) {
 	.product__title {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .product__text {
@@ -3003,7 +3010,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.product__text {
 		text-align: left;
-		padding: 25px 0 25px 25px;
+		padding: 25px 25px 25px 25px;
 	}
 }
 @media (max-width: 991.98px) {
@@ -3066,6 +3073,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.health__title {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .health__text {
@@ -3085,6 +3093,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.health__text {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .health__row {
@@ -3225,6 +3234,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.trust__title {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .trust__text {
@@ -3244,6 +3254,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.trust__text {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 }
 .trust__decor {
