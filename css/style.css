@@ -1014,7 +1014,7 @@ body.lock {
 }
 @media (max-width: 1344px) {
 	.investor-main__wrap {
-		padding-right: 20px;
+		padding: 0 20px;
 	}
 }
 .investor-main__title {
