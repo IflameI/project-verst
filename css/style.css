@@ -1522,6 +1522,12 @@ body.lock {
 @media (max-width: 991.98px) {
 	.present__title {
 		font-size: 38px;
+		padding: 0 10px;
+	}
+}
+@media (max-width: 767.98px) {
+	.present__title {
+		font-size: 28px;
 	}
 }
 .present__button button {
@@ -1630,6 +1636,12 @@ body.lock {
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 1 100%;
 		        flex: 0 1 100%;
+		margin: 0 10px;
+	}
+}
+@media (max-width: 479.98px) {
+	.links__column {
+		margin: 0 5px;
 	}
 }
 .links__row-min {
@@ -1647,6 +1659,11 @@ body.lock {
 		        justify-content: center;
 	}
 }
+@media (max-width: 991.98px) {
+	.links__row-min {
+		padding: 0 25px;
+	}
+}
 .links__min-column {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 50%;
@@ -1659,6 +1676,13 @@ body.lock {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+}
+@media (max-width: 479.98px) {
+	.links__min-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 100%;
+		        flex: 0 100%;
+	}
 }
 .links__suptitle {
 	font-family: Poppins;
@@ -1696,7 +1720,7 @@ body.lock {
 }
 @media (max-width: 479.98px) {
 	.links__item {
-		padding: 40px;
+		padding: 30px;
 	}
 }
 .links__item-title {
@@ -1761,6 +1785,11 @@ body.lock {
 		-o-transition: all 0.3s ease 0s;
 		transition: all 0.3s ease 0s;
 		text-decoration: underline;
+	}
+}
+@media (max-width: 767.98px) {
+	.questions__text {
+		margin: 0 auto 30px auto;
 	}
 }
 .questions__decor {
@@ -1938,7 +1967,7 @@ body.lock {
 }
 @media (max-width: 767.98px) {
 	.productPage__title {
-		font-size: 36px;
+		font-size: 30px;
 	}
 }
 .productPage__text {
@@ -2148,6 +2177,16 @@ body.lock {
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
+	}
+}
+@media (max-width: 991.98px) {
+	.work__row {
+		padding: 0 25px;
+	}
+}
+@media (max-width: 479.98px) {
+	.work__row {
+		padding: 0 10px;
 	}
 }
 .work__column {
@@ -3061,6 +3100,11 @@ body.lock {
 		padding: 0 25px;
 	}
 }
+@media (max-width: 479.98px) {
+	.health__row {
+		padding: 10px;
+	}
+}
 .health__column {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 33.333%;
@@ -3312,6 +3356,7 @@ body.lock {
 @media (max-width: 991.98px) {
 	.join__text {
 		max-width: unset;
+		padding: 0 25px;
 	}
 }
 .join__button .btn {
