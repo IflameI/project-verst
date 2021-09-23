@@ -2799,23 +2799,12 @@ body.lock {
 	}
 }
 
-.health {
-	background: rgba(43, 183, 196, 0.15);
-	padding-bottom: 80px;
-	border-radius: 220px 0px 0px 220px;
-}
-@media (max-width: 991.98px) {
-	.health {
-		border-radius: unset;
-	}
+.health svg {
+	margin-bottom: -3px;
 }
 .health__content {
-	padding-top: 160px;
-}
-@media (max-width: 991.98px) {
-	.health__content {
-		padding-top: 80px;
-	}
+	background: rgba(43, 183, 196, 0.15);
+	padding-bottom: 80px;
 }
 .health__title {
 	text-align: center;
