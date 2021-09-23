@@ -1248,6 +1248,11 @@ body.lock {
 	font-size: 18px;
 	font-weight: 600;
 }
+@media (max-width: 991.98px) {
+	.genetics__list li:not(:first-child):after {
+		display: none;
+	}
+}
 .genetics__list li:last-child {
 	padding-right: 0;
 }
@@ -1262,6 +1267,21 @@ body.lock {
 	height: 40px;
 	right: 0;
 	top: -10px;
+}
+@media (max-width: 600px) {
+	.genetics__list li:after {
+		display: none;
+	}
+}
+@media (max-width: 1344px) {
+	.genetics__list li {
+		padding-right: 50px;
+	}
+}
+@media (max-width: 991.98px) {
+	.genetics__list li {
+		padding-right: 0;
+	}
 }
 @media (max-width: 991.98px) {
 	.genetics__list li {
